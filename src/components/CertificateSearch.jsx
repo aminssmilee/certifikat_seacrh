@@ -80,12 +80,11 @@ const CertificateSearch = () => {
       {/* Header Section */}
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl">
-                <FileText className="w-5 h-5 text-white" />
+                <FileText className="w-6 h-6 text-white" />
               </div>
-
               <div>
                 <h1 className="text-xl font-bold text-gray-800">
                   Academy Capital Energy
@@ -94,12 +93,14 @@ const CertificateSearch = () => {
               </div>
             </div>
 
-            <a
-              href="https://preview1.webcare.my.id/"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors"
-            >
-              Back To Home
-            </a>
+            <div className="flex justify-end md:justify-end">
+              <a
+                href="https://preview1.webcare.my.id/"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors"
+              >
+                Back To Home
+              </a>
+            </div>
           </div>
         </div>
       </div>
