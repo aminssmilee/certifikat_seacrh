@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Search, FileText, Download, CheckCircle } from "lucide-react";
+// import img from "../assets/images/certificate.png";
 
 const CertificateSearch = () => {
   const [nomorPeserta, setNomorPeserta] = useState("");
@@ -77,22 +78,25 @@ const CertificateSearch = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-slate-200 to-blue-300 font-sans">
       {/* Header Section */}
-      <div className="bg-white/90 backdrop-blur-sm shadow-lg border-b border-white/20">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-2 shadow-md">
-                <FileText className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl">
+                <FileText className="w-5 h-5 text-white" />
               </div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-blue-800 bg-clip-text text-transparent">
-                Sertifikat
-              </h1>
+
+              <div>
+                <h1 className="text-xl font-bold text-gray-800">
+                  Academy Capital Energy
+                </h1>
+                <p className="text-xs text-gray-500">Sertifikat Digital</p>
+              </div>
             </div>
 
-            {/* Tombol Biru */}
             <a
               href="https://preview1.webcare.my.id/"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors"
             >
               Back To Home
             </a>
@@ -116,13 +120,14 @@ const CertificateSearch = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
-            Cari{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
-              Sertifikat Anda
-            </span>{" "}
-            di Sini
-          </h2>
+          <div className="text-center">
+            <p className="text-lg md:text-2xl text-gray-800 mb-2">
+              Academy Capital Energy
+            </p>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-blue-600 leading-tight">
+              Cari Sertifikat Anda
+            </h1>
+          </div>
 
           {/* Typewriter Text */}
           <div className="h-16 flex items-center justify-center mb-8">
