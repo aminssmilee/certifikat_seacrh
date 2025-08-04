@@ -121,7 +121,7 @@ const CertificateSearch = () => {
 
           {/* Heading */}
           <div className="text-center">
-            <p className="text-lg md:text-2xl text-gray-800 mb-2">
+            <p className="text-lg md:text-4xl font-bold text-blue-800 mb-2">
               Academy Capital Energy
             </p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-blue-600 leading-tight">
