@@ -90,9 +90,12 @@ const CertificateSearch = () => {
             </div>
 
             {/* Tombol Biru */}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition">
+            <a
+              href="https://preview1.webcare.my.id/"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition"
+            >
               Back To Home
-            </button>
+            </a>
           </div>
         </div>
       </div>
