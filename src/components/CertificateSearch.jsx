@@ -93,10 +93,13 @@ const CertificateSearch = () => {
               </div>
             </div>
 
-            <div className="flex justify-end md:justify-end">
+            <div className="flex justify-start md:justify-end">
               <a
                 href="https://preview1.webcare.my.id/"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium 
+               text-xs px-3 py-1.5 
+               md:text-base md:px-6 md:py-2 
+               rounded-full transition-colors"
               >
                 Back To Home
               </a>
@@ -141,7 +144,7 @@ const CertificateSearch = () => {
           {/* Search Section */}
           <div className="max-w-2xl mx-auto">
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/30 p-2">
-              <div className="flex items-center">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                 <div className="relative flex-1">
                   <input
                     type="text"
@@ -156,14 +159,14 @@ const CertificateSearch = () => {
                 <button
                   onClick={cariSertifikat}
                   disabled={isLoading || !nomorPeserta.trim()}
-                  className={`ml-2 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-200 ${
+                  className={`w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white transition-all duration-200 ${
                     isLoading || !nomorPeserta.trim()
                       ? "bg-gray-400 cursor-not-allowed"
                       : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                   }`}
                 >
                   {isLoading ? (
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center justify-center space-x-2">
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                       <span>Mencari...</span>
                     </div>
