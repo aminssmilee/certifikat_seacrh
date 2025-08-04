@@ -85,7 +85,7 @@ const CertificateSearch = () => {
                 <FileText className="w-6 h-6 text-white" />
               </div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-blue-800 bg-clip-text text-transparent">
-                Sistem Verifikasi Sertifikat
+                Sertifikat
               </h1>
             </div>
 
