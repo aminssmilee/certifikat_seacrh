@@ -51,10 +51,10 @@ const CertificateSearch = () => {
   const cariSertifikat = async () => {
     setIsLoading(true);
     const input = nomorPeserta.trim().toLowerCase();
-    
+
     // Simulate API call delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     const peserta = daftarPeserta.find((p) => p.nama.toLowerCase() === input);
 
     if (peserta) {
@@ -69,7 +69,7 @@ const CertificateSearch = () => {
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       cariSertifikat();
     }
   };
@@ -79,13 +79,20 @@ const CertificateSearch = () => {
       {/* Header Section */}
       <div className="bg-white/90 backdrop-blur-sm shadow-lg border-b border-white/20">
         <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-2 shadow-md">
-              <FileText className="w-6 h-6 text-white" />
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-2 shadow-md">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-blue-800 bg-clip-text text-transparent">
+                Sistem Verifikasi Sertifikat
+              </h1>
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-blue-800 bg-clip-text text-transparent">
-              Sistem Verifikasi Sertifikat
-            </h1>
+
+            {/* Tombol Biru */}
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition">
+              Back To Home
+            </button>
           </div>
         </div>
       </div>
@@ -142,8 +149,8 @@ const CertificateSearch = () => {
                   disabled={isLoading || !nomorPeserta.trim()}
                   className={`ml-2 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-200 ${
                     isLoading || !nomorPeserta.trim()
-                      ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                   }`}
                 >
                   {isLoading ? (
@@ -152,7 +159,7 @@ const CertificateSearch = () => {
                       <span>Mencari...</span>
                     </div>
                   ) : (
-                    'Cari Sertifikat'
+                    "Cari Sertifikat"
                   )}
                 </button>
               </div>
@@ -175,7 +182,9 @@ const CertificateSearch = () => {
               <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-white" />
-                  <h3 className="text-xl font-semibold text-white">Sertifikat Ditemukan!</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    Sertifikat Ditemukan!
+                  </h3>
                 </div>
               </div>
 
@@ -216,9 +225,12 @@ const CertificateSearch = () => {
             <div className="bg-gradient-to-br from-gray-100 to-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Search className="w-8 h-8 text-blue-600" />
             </div>
-            <h3 className="font-semibold text-gray-800 mb-2">Pencarian Cepat</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">
+              Pencarian Cepat
+            </h3>
             <p className="text-gray-600 text-sm">
-              Sistem pencarian yang responsif dan akurat untuk menemukan sertifikat Anda
+              Sistem pencarian yang responsif dan akurat untuk menemukan
+              sertifikat Anda
             </p>
           </div>
 
@@ -226,9 +238,12 @@ const CertificateSearch = () => {
             <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-blue-700" />
             </div>
-            <h3 className="font-semibold text-gray-800 mb-2">Verifikasi Resmi</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">
+              Verifikasi Resmi
+            </h3>
             <p className="text-gray-600 text-sm">
-              Semua sertifikat telah diverifikasi dan tersimpan dengan aman di sistem kami
+              Semua sertifikat telah diverifikasi dan tersimpan dengan aman di
+              sistem kami
             </p>
           </div>
 
