@@ -95,7 +95,7 @@ const CertificateSearch = () => {
 
             <div className="flex justify-start md:justify-end">
               <a
-                href="https://preview1.webcare.my.id/"
+                href="https://academycapitalenergy.com/"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium 
                text-xs px-3 py-1.5 
                md:text-base md:px-6 md:py-2 
