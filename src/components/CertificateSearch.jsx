@@ -10,11 +10,11 @@ const CertificateSearch = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const daftarPeserta = [
-    { nama: "salis", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
-    { nama: "ahmad", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
-    { nama: "sholeh", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
-    { nama: "003", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
-    { nama: "004", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
+    { nama: "nama1", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
+    { nama: "nama2", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
+    { nama: "nama3", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
+    { nama: "nama4", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
+    { nama: "nama5", fileId: "1A9N60-OYI0-DHl6ybLElJk6oAY6qeA80" },
   ];
 
   const typewriterWords = [
@@ -205,7 +205,7 @@ const CertificateSearch = () => {
                 <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg overflow-hidden mb-6 border border-gray-200/50">
                   <iframe
                     title="Preview Sertifikat"
-                    src={`https://drive.google.com/file/d/${fileId}/preview`}
+                    src={`c`}
                     allow="autoplay"
                     className="w-full h-[400px] md:h-[500px] border-0"
                   />
